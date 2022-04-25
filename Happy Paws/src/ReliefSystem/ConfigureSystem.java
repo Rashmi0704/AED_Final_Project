@@ -26,6 +26,7 @@ public class ConfigureSystem {
         UserAccount ua = system.getUserAccountDirectory().createUserAccount("Sysadmin","sysadmin", "sysadmin", person, new SystemAdminRole());
         
         return system;
+        
     }
     
 }
