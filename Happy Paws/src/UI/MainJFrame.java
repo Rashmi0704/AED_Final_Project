@@ -33,7 +33,6 @@ public class MainJFrame extends javax.swing.JFrame {
         txbxUsername = new javax.swing.JTextField();
         txbxPassword = new javax.swing.JTextField();
         lbusername = new javax.swing.JLabel();
-        lbPassword = new javax.swing.JLabel();
         btnLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -51,12 +50,18 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPlane.setLeftComponent(ControlPanel);
 
+        btnLogout.setForeground(new java.awt.Color(0, 102, 102));
         btnLogout.setText("Logout");
+        btnLogout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogoutActionPerformed(evt);
+            }
+        });
 
+        lbusername.setForeground(new java.awt.Color(0, 102, 102));
         lbusername.setText("Username");
 
-        lbPassword.setText("Password:");
-
+        btnLogin.setForeground(new java.awt.Color(0, 102, 102));
         btnLogin.setText("Login");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,9 +75,7 @@ public class MainJFrame extends javax.swing.JFrame {
             containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, containerLayout.createSequentialGroup()
                 .addContainerGap(64, Short.MAX_VALUE)
-                .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbusername, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(lbusername, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(containerLayout.createSequentialGroup()
                         .addGap(34, 34, 34)
@@ -96,9 +99,7 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(txbxUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbusername))
                 .addGap(28, 28, 28)
-                .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbPassword))
+                .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addComponent(btnLogin)
                 .addGap(18, 18, 18)
@@ -125,6 +126,10 @@ public class MainJFrame extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnLogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogoutActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLogoutActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,7 +171,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLogout;
     private javax.swing.JPanel container;
-    private javax.swing.JLabel lbPassword;
     private javax.swing.JLabel lbusername;
     private javax.swing.JSplitPane splitPlane;
     private javax.swing.JTextField txbxPassword;
