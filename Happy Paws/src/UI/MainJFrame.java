@@ -28,27 +28,23 @@ public class MainJFrame extends javax.swing.JFrame {
 
         splitPlane = new javax.swing.JSplitPane();
         ControlPanel = new javax.swing.JPanel();
-        container = new javax.swing.JPanel();
+        btnLogin = new javax.swing.JButton();
         btnLogout = new javax.swing.JButton();
         txbxUsername = new javax.swing.JTextField();
-        txbxPassword = new javax.swing.JTextField();
         lbusername = new javax.swing.JLabel();
-        btnLogin = new javax.swing.JButton();
+        txbxPassword = new javax.swing.JTextField();
+        lbPassword = new javax.swing.JLabel();
+        container = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout ControlPanelLayout = new javax.swing.GroupLayout(ControlPanel);
-        ControlPanel.setLayout(ControlPanelLayout);
-        ControlPanelLayout.setHorizontalGroup(
-            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        ControlPanelLayout.setVerticalGroup(
-            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 333, Short.MAX_VALUE)
-        );
-
-        splitPlane.setLeftComponent(ControlPanel);
+        btnLogin.setForeground(new java.awt.Color(0, 102, 102));
+        btnLogin.setText("Login");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
 
         btnLogout.setForeground(new java.awt.Color(0, 102, 102));
         btnLogout.setText("Logout");
@@ -61,50 +57,64 @@ public class MainJFrame extends javax.swing.JFrame {
         lbusername.setForeground(new java.awt.Color(0, 102, 102));
         lbusername.setText("Username");
 
-        btnLogin.setForeground(new java.awt.Color(0, 102, 102));
-        btnLogin.setText("Login");
-        btnLogin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLoginActionPerformed(evt);
-            }
-        });
+        lbPassword.setForeground(new java.awt.Color(0, 102, 102));
+        lbPassword.setText("Password");
+
+        javax.swing.GroupLayout ControlPanelLayout = new javax.swing.GroupLayout(ControlPanel);
+        ControlPanel.setLayout(ControlPanelLayout);
+        ControlPanelLayout.setHorizontalGroup(
+            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ControlPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ControlPanelLayout.createSequentialGroup()
+                        .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ControlPanelLayout.createSequentialGroup()
+                        .addGap(0, 2, Short.MAX_VALUE)
+                        .addComponent(lbusername, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26))))
+            .addGroup(ControlPanelLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(lbPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(ControlPanelLayout.createSequentialGroup()
+                .addGroup(ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txbxUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        ControlPanelLayout.setVerticalGroup(
+            ControlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ControlPanelLayout.createSequentialGroup()
+                .addGap(44, 44, 44)
+                .addComponent(lbusername)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txbxUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(lbPassword)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(btnLogin)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLogout)
+                .addGap(85, 85, 85))
+        );
+
+        splitPlane.setLeftComponent(ControlPanel);
 
         javax.swing.GroupLayout containerLayout = new javax.swing.GroupLayout(container);
         container.setLayout(containerLayout);
         containerLayout.setHorizontalGroup(
             containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, containerLayout.createSequentialGroup()
-                .addContainerGap(64, Short.MAX_VALUE)
-                .addComponent(lbusername, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(containerLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(containerLayout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(txbxUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(46, 46, 46))
-            .addGroup(containerLayout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLogout, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGap(0, 301, Short.MAX_VALUE)
         );
         containerLayout.setVerticalGroup(
             containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, containerLayout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addGroup(containerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txbxUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbusername))
-                .addGap(28, 28, 28)
-                .addComponent(txbxPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(btnLogin)
-                .addGap(18, 18, 18)
-                .addComponent(btnLogout)
-                .addGap(72, 72, 72))
+            .addGap(0, 333, Short.MAX_VALUE)
         );
 
         splitPlane.setRightComponent(container);
@@ -171,6 +181,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnLogout;
     private javax.swing.JPanel container;
+    private javax.swing.JLabel lbPassword;
     private javax.swing.JLabel lbusername;
     private javax.swing.JSplitPane splitPlane;
     private javax.swing.JTextField txbxPassword;
