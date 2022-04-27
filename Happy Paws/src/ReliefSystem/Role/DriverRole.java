@@ -4,10 +4,21 @@
  */
 package ReliefSystem.Role;
 
+import ReliefSystem.Ecosystem;
+import ReliefSystem.UserAccount.UserAccount;
+import UserInterface.Driver.DriverWorkArea;
+import javax.management.relation.Role;
+import javax.swing.JPanel;
+
+
 /**
  *
+ * 
  * @author jsher
  */
-public class DriverRole {
-    
+public class DriverRole extends Role {
+    @Override
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Ecosystem system) {
+        return new DriverWorkArea(userProcessContainer, account, system);
+    }
 }
