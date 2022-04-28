@@ -6,14 +6,14 @@ package ReliefSystem.Role;
 
 import ReliefSystem.Ecosystem;
 import ReliefSystem.UserAccount.UserAccount;
-import UserInterface.HospiitalAdmin.HospitalAdminWorkArea;
-import UserInterface.HospiitalAdmin.ManageVet;
-import UserInterface.Hospital.VetWorkarea;
+
 import javax.swing.JPanel;
+
 /**
  *
  * @author jsher
  */
+
 public class VetRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Ecosystem system) {
