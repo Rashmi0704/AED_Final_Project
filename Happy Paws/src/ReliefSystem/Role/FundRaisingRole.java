@@ -7,7 +7,7 @@ package ReliefSystem.Role;
 import ReliefSystem.Ecosystem;
 import ReliefSystem.UserAccount.UserAccount;
 import javax.swing.JPanel;
-
+import UserInterface.FundRaiser.FundraiserWorkArea;
 
 
 /**
