@@ -8,8 +8,18 @@ package UserInterface.Driver;
 import HappyPawSystem.Driver.Driver;
 import HappyPawSystem.Ecosystem;
 import HappyPawSystem.UserAccount.UserAccount;
+import java.util.Properties;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+//import javax.mail;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -52,6 +62,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(214, 209, 222));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblDriver.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -66,15 +77,19 @@ public class DriverWorkArea extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDriver);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 660, 137));
+
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setText("Status");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, 54, -1));
 
         txtStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtStatusActionPerformed(evt);
             }
         });
+        add(txtStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 310, 138, -1));
 
         btnChangeStatus.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         btnChangeStatus.setForeground(new java.awt.Color(63, 40, 101));
@@ -85,8 +100,9 @@ public class DriverWorkArea extends javax.swing.JPanel {
                 btnChangeStatusActionPerformed(evt);
             }
         });
+        add(btnChangeStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 132, 41));
 
-        bntSendWindow.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        bntSendWindow.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         bntSendWindow.setForeground(new java.awt.Color(63, 40, 101));
         bntSendWindow.setText("Send Email");
         bntSendWindow.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -95,6 +111,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
                 bntSendWindowActionPerformed(evt);
             }
         });
+        add(bntSendWindow, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, 126, 41));
 
         jPanel1.setBackground(new java.awt.Color(63, 40, 101));
 
@@ -107,9 +124,9 @@ public class DriverWorkArea extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(482, Short.MAX_VALUE)
                 .addComponent(lblManageInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(85, 85, 85))
+                .addGap(402, 402, 402))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,63 +135,17 @@ public class DriverWorkArea extends javax.swing.JPanel {
                 .addComponent(lblManageInfo, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(63, 40, 101));
-        jLabel2.setText("You are logged in as a driver..");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(123, 123, 123)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap(141, 141, 141)
-                                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(130, 130, 130))
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(81, 81, 81)
-                                        .addComponent(btnChangeStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(30, 30, 30)
-                                        .addComponent(bntSendWindow, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(25, 25, 25)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 123, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnChangeStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bntSendWindow, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47))
-        );
+        jLabel2.setText("You are logged in as a driver...");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 280, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtStatusActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtStatusActionPerformed
 
     private void btnChangeStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangeStatusActionPerformed
@@ -185,6 +156,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
             }
         }
         populateTable();
+        
     }                                               
 
     public void populateTable() {
@@ -206,7 +178,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
 
     private void bntSendWindowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntSendWindowActionPerformed
         // TODO add your handling code here:
-        sendEmail();
+        sendMailToPetOwner("rashmisingh337@gmail.com","","");
     }//GEN-LAST:event_bntSendWindowActionPerformed
 
 
@@ -222,7 +194,41 @@ public class DriverWorkArea extends javax.swing.JPanel {
     private javax.swing.JTextField txtStatus;
     // End of variables declaration//GEN-END:variables
 
-    private void sendEmail() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void sendMailToPetOwner(String toMail, String msg, String username){
+        System.out.println("Now start sending Email!");
+        final String usname = "nronson93@gmail.com";
+        final String passwrd = "Scam2022@";
+        
+        Properties props = new Properties();
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.port", "587");
+        //props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.auth","true");
+        props.put("mail.smtp.starttls.enable", "true");
+        //props.put("mail.smtp.port","465");
+        
+        Session session=Session.getDefaultInstance(props,
+             new javax.mail.Authenticator() {
+             protected PasswordAuthentication getPasswordAuthentication(){
+                 return new PasswordAuthentication(usname,passwrd);
+                }
+             });
+        
+        try{
+         Message message=new MimeMessage(session);
+         message.setFrom(new InternetAddress("rashmisingh@gmail.com"));
+         message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toMail));
+         message.setSubject("Status Update ");
+         message.setContent("<font color=black> Pet has been dropped to the destination ! <b>" +
+                 "<font color=black> It's been a real pleasure serving you ! <b>","text/html");
+
+         Transport.send(message);
+         JOptionPane.showMessageDialog(null, "Pet has been dropped to the destination!");
+     }
+        catch(MessagingException e){
+        e.printStackTrace();
+
+        }
     }
 }
+

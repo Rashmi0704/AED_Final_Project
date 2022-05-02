@@ -78,7 +78,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setText("MANAGE HEALTH CAMP");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 300, 40));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, 300, 40));
 
         tblHealthCamp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -101,7 +101,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblHealthCamp);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 516, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 670, 140));
 
         btnView.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnView.setForeground(new java.awt.Color(63, 40, 101));
