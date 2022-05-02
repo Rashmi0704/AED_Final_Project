@@ -55,6 +55,8 @@ public class MainPageOrganiser extends javax.swing.JPanel {
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
 
+        setBackground(new java.awt.Color(245, 225, 193));
+
         sidepane.setBackground(new java.awt.Color(63, 40, 101));
         sidepane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -101,7 +103,7 @@ public class MainPageOrganiser extends javax.swing.JPanel {
         jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        sidepane.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 220, 30));
+        sidepane.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 190, 30));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -110,10 +112,10 @@ public class MainPageOrganiser extends javax.swing.JPanel {
         jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        sidepane.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 220, 30));
+        sidepane.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 210, 30));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2022-05-01 at 11.11.38 PM (1) copy.jpeg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/giffy.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -121,16 +123,17 @@ public class MainPageOrganiser extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, 768, Short.MAX_VALUE)
+            .addComponent(sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

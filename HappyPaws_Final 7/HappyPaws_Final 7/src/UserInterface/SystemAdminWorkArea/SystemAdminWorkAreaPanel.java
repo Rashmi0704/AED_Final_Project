@@ -51,6 +51,8 @@ public class SystemAdminWorkAreaPanel extends javax.swing.JPanel {
         lblManageDrivers = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(231, 231, 210));
+
         sidePane.setBackground(new java.awt.Color(63, 40, 101));
         sidePane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -272,7 +274,7 @@ public class SystemAdminWorkAreaPanel extends javax.swing.JPanel {
         sidePane.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 260, 40));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2022-05-01 at 10.56.33 PM.jpeg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/vet.gif"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -281,7 +283,7 @@ public class SystemAdminWorkAreaPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(sidePane, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 785, Short.MAX_VALUE))
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 785, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

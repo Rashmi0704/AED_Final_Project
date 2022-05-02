@@ -90,11 +90,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(ControlPanel);
 
-        container.setBackground(new java.awt.Color(255, 255, 255));
+        container.setBackground(new java.awt.Color(109, 197, 197));
         container.setLayout(new java.awt.CardLayout());
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2022-05-01 at 10.28.03 PM (1).jpeg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/doggoooo.gif"))); // NOI18N
         container.add(jLabel4, "card3");
 
         jSplitPane1.setRightComponent(container);

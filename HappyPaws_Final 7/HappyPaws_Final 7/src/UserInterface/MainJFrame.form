@@ -144,7 +144,7 @@
         <Container class="javax.swing.JPanel" name="container">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+              <Color blue="c5" green="c5" red="6d" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -159,7 +159,7 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Images/WhatsApp Image 2022-05-01 at 10.28.03 PM (1).jpeg"/>
+                  <Image iconType="3" name="/Images/doggoooo.gif"/>
                 </Property>
               </Properties>
               <Constraints>

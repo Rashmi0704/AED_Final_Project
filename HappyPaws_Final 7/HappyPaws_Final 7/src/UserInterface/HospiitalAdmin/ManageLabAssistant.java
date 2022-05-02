@@ -79,7 +79,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MANAGE LAB ASSITANT ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 350, 50));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 350, 50));
 
         tblLabAssistant.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -102,7 +102,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblLabAssistant);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 470, 91));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 470, 91));
 
         btnView.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnView.setForeground(new java.awt.Color(63, 40, 101));
@@ -113,7 +113,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
-        jPanel1.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 70, 30));
+        jPanel1.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 280, 70, 30));
 
         btnUpdate.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(63, 40, 101));
@@ -124,7 +124,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        jPanel1.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 100, 30));
+        jPanel1.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 280, 100, 30));
 
         btnDelete.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(63, 40, 101));
@@ -135,34 +135,34 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 100, 30));
+        jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 280, 100, 30));
 
         lblname.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblname.setForeground(new java.awt.Color(63, 40, 101));
         lblname.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblname.setText("Name");
-        jPanel1.add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 100, 30));
+        jPanel1.add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, 100, 30));
 
         txtname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 170, 30));
+        jPanel1.add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 170, 30));
 
         lblusername.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblusername.setForeground(new java.awt.Color(63, 40, 101));
         lblusername.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblusername.setText("Username");
-        jPanel1.add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 370, 110, 30));
+        jPanel1.add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 390, 110, 30));
 
         txtpass.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 170, 30));
+        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 440, 170, 30));
 
         lblpassword.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblpassword.setForeground(new java.awt.Color(63, 40, 101));
         lblpassword.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblpassword.setText("Password");
-        jPanel1.add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 120, 30));
+        jPanel1.add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 120, 30));
 
         txtusername.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 170, 30));
+        jPanel1.add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 390, 170, 30));
 
         btnadd.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnadd.setForeground(new java.awt.Color(63, 40, 101));
@@ -173,7 +173,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 btnaddActionPerformed(evt);
             }
         });
-        jPanel1.add(btnadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 200, 40));
+        jPanel1.add(btnadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 510, 200, 40));
 
         jPanel2.setBackground(new java.awt.Color(63, 40, 101));
 
@@ -186,9 +186,9 @@ public class ManageLabAssistant extends javax.swing.JPanel {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(391, Short.MAX_VALUE)
+                .addContainerGap(433, Short.MAX_VALUE)
                 .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(213, 213, 213))
+                .addGap(341, 341, 341))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +197,7 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -205,11 +205,11 @@ public class ManageLabAssistant extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 655, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 653, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
