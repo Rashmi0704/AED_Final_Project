@@ -159,7 +159,7 @@
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/Images/Dog-Doctor.jpeg"/>
+                  <Image iconType="3" name="/Images/WhatsApp Image 2022-05-01 at 10.28.03 PM (1).jpeg"/>
                 </Property>
               </Properties>
               <Constraints>

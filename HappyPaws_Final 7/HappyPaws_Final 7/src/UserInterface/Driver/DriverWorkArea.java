@@ -48,7 +48,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
         btnChangeStatus = new javax.swing.JButton();
         bntSendWindow = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(214, 209, 222));
 
         tblDriver.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -64,6 +64,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblDriver);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setText("Status");
 
         txtStatus.addActionListener(new java.awt.event.ActionListener() {
@@ -72,8 +73,8 @@ public class DriverWorkArea extends javax.swing.JPanel {
             }
         });
 
-        btnChangeStatus.setFont(new java.awt.Font("Lucida Grande", 1, 16)); // NOI18N
-        btnChangeStatus.setForeground(new java.awt.Color(0, 102, 102));
+        btnChangeStatus.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        btnChangeStatus.setForeground(new java.awt.Color(63, 40, 101));
         btnChangeStatus.setText("Change Status");
         btnChangeStatus.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnChangeStatus.addActionListener(new java.awt.event.ActionListener() {
@@ -82,7 +83,10 @@ public class DriverWorkArea extends javax.swing.JPanel {
             }
         });
 
+        bntSendWindow.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
+        bntSendWindow.setForeground(new java.awt.Color(63, 40, 101));
         bntSendWindow.setText("Send Email");
+        bntSendWindow.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bntSendWindow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bntSendWindowActionPerformed(evt);
@@ -123,7 +127,7 @@ public class DriverWorkArea extends javax.swing.JPanel {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnChangeStatus)
-                    .addComponent(bntSendWindow))
+                    .addComponent(bntSendWindow, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(158, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents

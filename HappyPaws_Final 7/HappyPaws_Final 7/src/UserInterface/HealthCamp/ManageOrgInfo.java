@@ -6,6 +6,7 @@
 package UserInterface.HealthCamp;
 import HappyPawSystem.Ecosystem;
 import HappyPawSystem.HealthCamp.HealthCamp;
+import HappyPawSystem.Hospital.Hospital;
 import HappyPawSystem.UserAccount.UserAccount;
 import java.awt.CardLayout;
 import java.util.regex.Matcher;
@@ -30,8 +31,23 @@ public class ManageOrgInfo extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.system = system;
         this.account = account;
+        populateTextFields();
     }
 
+    private void populateTextFields() {
+        for (HealthCamp healthCamp : system.getHealthCampDirectory().getHealthCampDirectory()) {
+                System.out.println("account username : " + account.getUsername());
+            if (healthCamp.getUsername().equals(account.getUsername())) {
+                //txtorgname.setText(healthCamp.getUsername());
+                //System.out.println("Hospital name : " + hospital.getName());
+                txtorgname.setText(healthCamp.getName());
+                txtorgadd.setText(healthCamp.getAddress());
+                txtphonenumber.setText(healthCamp.getNumber());
+                txtorgowner.setText(healthCamp.getHealthCampName());
+                break;
+            }
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -66,44 +82,44 @@ public class ManageOrgInfo extends javax.swing.JPanel {
         lblorgname.setForeground(new java.awt.Color(63, 40, 101));
         lblorgname.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblorgname.setText("NAME");
-        jPanel1.add(lblorgname, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 130, 31));
+        jPanel1.add(lblorgname, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 130, 31));
 
         txtorgname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtorgname, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, 190, 30));
+        jPanel1.add(txtorgname, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, 190, 30));
 
         lblorgowner.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblorgowner.setForeground(new java.awt.Color(63, 40, 101));
         lblorgowner.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblorgowner.setText("OWNER");
-        jPanel1.add(lblorgowner, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 90, 24));
+        jPanel1.add(lblorgowner, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 90, 24));
 
         txtorgowner.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtorgowner, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 180, 190, 30));
+        jPanel1.add(txtorgowner, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 190, 30));
 
         lblorgadd.setBackground(new java.awt.Color(255, 255, 255));
         lblorgadd.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblorgadd.setForeground(new java.awt.Color(63, 40, 101));
         lblorgadd.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblorgadd.setText("ADDRESS");
-        jPanel1.add(lblorgadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 130, 30));
+        jPanel1.add(lblorgadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, 130, 30));
 
         txtorgadd.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtorgadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 300, 190, 30));
+        jPanel1.add(txtorgadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 190, 30));
 
         lblphonenumber.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblphonenumber.setForeground(new java.awt.Color(63, 40, 101));
         lblphonenumber.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblphonenumber.setText("PHONE NUMBER");
-        jPanel1.add(lblphonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 120, 22));
+        jPanel1.add(lblphonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 350, 120, 22));
 
         txtphonenumber.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtphonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 190, 30));
+        jPanel1.add(txtphonenumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 190, 30));
 
         jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(63, 40, 101));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("ORGANISATION INFORMATION ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 350, 50));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 350, 50));
 
         btnsave.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnsave.setForeground(new java.awt.Color(63, 40, 101));

@@ -94,7 +94,7 @@ public class MainJFrame extends javax.swing.JFrame {
         container.setLayout(new java.awt.CardLayout());
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Dog-Doctor.jpeg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2022-05-01 at 10.28.03 PM (1).jpeg"))); // NOI18N
         container.add(jLabel4, "card3");
 
         jSplitPane1.setRightComponent(container);
