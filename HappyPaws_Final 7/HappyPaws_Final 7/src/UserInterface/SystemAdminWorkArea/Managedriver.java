@@ -57,6 +57,7 @@ public class Managedriver extends javax.swing.JPanel {
         btnadd = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(214, 209, 222));
         jPanel1.setForeground(new java.awt.Color(63, 40, 101));
@@ -83,7 +84,7 @@ public class Managedriver extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblManageDriver);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 110, 440, 91));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 440, 91));
 
         btnView.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         btnView.setForeground(new java.awt.Color(63, 40, 101));
@@ -94,7 +95,7 @@ public class Managedriver extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
-        jPanel1.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 60, 30));
+        jPanel1.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 60, 30));
 
         btnDelete.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(63, 40, 101));
@@ -105,25 +106,25 @@ public class Managedriver extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 70, 30));
+        jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 70, 30));
 
-        lblname.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        lblname.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         lblname.setForeground(new java.awt.Color(63, 40, 101));
         lblname.setText("Name");
-        jPanel1.add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 38, -1));
-        jPanel1.add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 100, -1));
+        jPanel1.add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 70, 30));
+        jPanel1.add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 310, 100, -1));
 
-        lblusername.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        lblusername.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         lblusername.setForeground(new java.awt.Color(63, 40, 101));
         lblusername.setText("Username");
-        jPanel1.add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 77, -1));
-        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 350, 100, -1));
+        jPanel1.add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 350, 110, 30));
+        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 390, 100, -1));
 
-        lblpassword.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        lblpassword.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         lblpassword.setForeground(new java.awt.Color(63, 40, 101));
         lblpassword.setText("Password");
-        jPanel1.add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 63, -1));
-        jPanel1.add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 100, -1));
+        jPanel1.add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, 100, -1));
+        jPanel1.add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 350, 100, -1));
 
         btnadd.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnadd.setForeground(new java.awt.Color(63, 40, 101));
@@ -134,12 +135,12 @@ public class Managedriver extends javax.swing.JPanel {
                 btnaddActionPerformed(evt);
             }
         });
-        jPanel1.add(btnadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 100, 40));
+        jPanel1.add(btnadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 430, 100, 40));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setText("MANAGE DRIVER");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 50, 218, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, 218, -1));
 
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-back-arrow-64 (2) (1).png"))); // NOI18N
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -149,15 +150,23 @@ public class Managedriver extends javax.swing.JPanel {
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 40, 30));
 
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Screenshot (2) (1).png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1080, 700));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 940, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1063, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 626, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 687, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -240,6 +249,7 @@ public void populateDriverTable() {
     private javax.swing.JButton btnView;
     private javax.swing.JButton btnadd;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblname;

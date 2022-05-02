@@ -40,6 +40,7 @@ public class MainPageOrganiser extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jSeparator1 = new javax.swing.JSeparator();
         sidepane = new javax.swing.JPanel();
         manageorginfo = new javax.swing.JPanel();
         lblmanageorginfo = new javax.swing.JLabel();
@@ -47,8 +48,12 @@ public class MainPageOrganiser extends javax.swing.JPanel {
         managepetvol = new javax.swing.JPanel();
         lblManagePetVolunteer = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+
+        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
 
         sidepane.setBackground(new java.awt.Color(63, 40, 101));
         sidepane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,7 +72,7 @@ public class MainPageOrganiser extends javax.swing.JPanel {
         manageorginfo.add(lblmanageorginfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 22));
         manageorginfo.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 40));
 
-        sidepane.add(manageorginfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 220, 40));
+        sidepane.add(manageorginfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 220, 40));
 
         managepetvol.setBackground(new java.awt.Color(187, 177, 205));
         managepetvol.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -83,26 +88,49 @@ public class MainPageOrganiser extends javax.swing.JPanel {
         managepetvol.add(lblManagePetVolunteer, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 170, 24));
         managepetvol.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
 
-        sidepane.add(managepetvol, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 220, 40));
-
-        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
-        sidepane.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 630, 220, 10));
+        sidepane.add(managepetvol, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 220, 40));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(63, 40, 101));
-        sidepane.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, -1));
+        sidepane.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 0));
+
+        jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel4.setText("Health Camp owner..");
+        jLabel4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel4.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        sidepane.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 220, 30));
+
+        jLabel5.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel5.setText("You are logged in as a ");
+        jLabel5.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        jLabel5.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        sidepane.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 220, 30));
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/WhatsApp Image 2022-05-01 at 11.11.38 PM (1) copy.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 646, Short.MAX_VALUE))
+                .addComponent(sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, 768, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -126,6 +154,9 @@ public class MainPageOrganiser extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel lblManagePetVolunteer;

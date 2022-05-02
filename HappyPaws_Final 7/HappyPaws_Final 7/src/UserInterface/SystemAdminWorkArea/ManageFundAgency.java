@@ -76,7 +76,7 @@ public class ManageFundAgency extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MANAGE FUND AGENCY");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, 310, 50));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 310, 50));
 
         tblfundagency.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -99,7 +99,7 @@ public class ManageFundAgency extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblfundagency);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 470, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 470, 92));
 
         btnView.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnView.setForeground(new java.awt.Color(63, 40, 101));
@@ -110,7 +110,7 @@ public class ManageFundAgency extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
-        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 80, 30));
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 80, 30));
 
         btnUpdate.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(63, 40, 101));
@@ -121,7 +121,7 @@ public class ManageFundAgency extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 220, 100, 30));
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 100, 30));
 
         btnDelete.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(63, 40, 101));
@@ -132,34 +132,34 @@ public class ManageFundAgency extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 220, 90, 30));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 90, 30));
 
         txtname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 270, 140, 30));
+        add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 140, 30));
 
         txtusername.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 310, 140, 30));
+        add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, 140, 30));
 
         txtpass.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 140, 30));
+        add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 460, 140, 30));
 
         lblusername.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblusername.setForeground(new java.awt.Color(63, 40, 101));
         lblusername.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblusername.setText("USERNAME");
-        add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 120, 30));
+        add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 120, 30));
 
         lblname.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblname.setForeground(new java.awt.Color(63, 40, 101));
         lblname.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblname.setText("NAME");
-        add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, 90, 30));
+        add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, 90, 30));
 
         lblpassword.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblpassword.setForeground(new java.awt.Color(63, 40, 101));
         lblpassword.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblpassword.setText("PASSWORD");
-        add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 110, 30));
+        add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, 110, 30));
 
         btnsave.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnsave.setForeground(new java.awt.Color(63, 40, 101));
@@ -170,10 +170,11 @@ public class ManageFundAgency extends javax.swing.JPanel {
                 btnsaveActionPerformed(evt);
             }
         });
-        add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 420, 190, 30));
+        add(btnsave, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 520, 190, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/funds.jpeg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 650));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/money.jpeg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 790));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

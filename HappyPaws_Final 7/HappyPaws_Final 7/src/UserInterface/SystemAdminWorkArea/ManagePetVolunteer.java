@@ -60,6 +60,7 @@ public class ManagePetVolunteer extends javax.swing.JPanel {
         lblUserName = new javax.swing.JLabel();
         lblName = new javax.swing.JLabel();
         btnSubmit = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(214, 209, 222));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -174,6 +175,10 @@ public class ManagePetVolunteer extends javax.swing.JPanel {
             }
         });
         add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(367, 469, 110, 30));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/How-to-Start-an-Animal-Rescue-featured.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 710));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -280,6 +285,7 @@ public class ManagePetVolunteer extends javax.swing.JPanel {
     private javax.swing.JButton btnSubmit;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JButton btnView;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblPassword;

@@ -49,6 +49,8 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
         lblManageVet = new javax.swing.JLabel();
         ManageSponsor = new javax.swing.JPanel();
         lblAddSponsor = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         backgroundPanel.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -84,7 +86,7 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        sidepane.add(ManageLabAssitant, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 260, 50));
+        sidepane.add(ManageLabAssitant, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 260, 50));
 
         ManageHospitalInfo.setBackground(new java.awt.Color(187, 177, 205));
 
@@ -115,7 +117,7 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        sidepane.add(ManageHospitalInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 260, 50));
+        sidepane.add(ManageHospitalInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 260, 50));
 
         ManagePet.setBackground(new java.awt.Color(187, 177, 205));
 
@@ -146,7 +148,7 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        sidepane.add(ManagePet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 260, 50));
+        sidepane.add(ManagePet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 260, 50));
 
         ManageVet.setBackground(new java.awt.Color(187, 177, 205));
         ManageVet.setForeground(new java.awt.Color(0, 153, 153));
@@ -178,7 +180,7 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
-        sidepane.add(ManageVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 260, 50));
+        sidepane.add(ManageVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 260, 50));
 
         ManageSponsor.setBackground(new java.awt.Color(187, 177, 205));
 
@@ -209,7 +211,14 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        sidepane.add(ManageSponsor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 260, 50));
+        sidepane.add(ManageSponsor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 260, 50));
+
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("You are logged in as a hospital..");
+        sidepane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 250, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Dog-Doctor.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
         backgroundPanel.setLayout(backgroundPanelLayout);
@@ -217,11 +226,18 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
             backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundPanelLayout.createSequentialGroup()
                 .addComponent(sidepane, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 617, Short.MAX_VALUE))
+                .addGap(0, 875, Short.MAX_VALUE))
+            .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundPanelLayout.createSequentialGroup()
+                    .addContainerGap(257, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap()))
         );
         backgroundPanelLayout.setVerticalGroup(
             backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, 613, Short.MAX_VALUE)
+            .addComponent(sidepane, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE)
+            .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 775, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -289,6 +305,8 @@ public class HospitalAdminWorkArea extends javax.swing.JPanel {
     private javax.swing.JPanel ManageSponsor;
     private javax.swing.JPanel ManageVet;
     private javax.swing.JPanel backgroundPanel;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblAddSponsor;
     private javax.swing.JLabel lblManageLabAssistant;
     private javax.swing.JLabel lblManageVet;

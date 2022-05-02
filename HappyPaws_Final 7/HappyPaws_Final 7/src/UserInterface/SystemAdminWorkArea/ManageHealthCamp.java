@@ -78,7 +78,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setText("MANAGE HEALTH CAMP");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 300, 40));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 300, 40));
 
         tblHealthCamp.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -101,7 +101,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblHealthCamp);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, 516, 92));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 516, 92));
 
         btnView.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnView.setForeground(new java.awt.Color(63, 40, 101));
@@ -112,7 +112,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
                 btnViewActionPerformed(evt);
             }
         });
-        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 80, 30));
+        add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 230, 80, 30));
 
         btnUpdate.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnUpdate.setForeground(new java.awt.Color(63, 40, 101));
@@ -123,7 +123,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 400, 80, 30));
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 80, 30));
 
         btnDelete.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnDelete.setForeground(new java.awt.Color(63, 40, 101));
@@ -134,7 +134,7 @@ public class ManageHealthCamp extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 90, 30));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 90, 30));
 
         txtname.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
         txtname.addActionListener(new java.awt.event.ActionListener() {
@@ -142,30 +142,30 @@ public class ManageHealthCamp extends javax.swing.JPanel {
                 txtnameActionPerformed(evt);
             }
         });
-        add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, 120, 30));
+        add(txtname, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 120, 30));
 
         txtusername.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 500, 120, 30));
+        add(txtusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, 120, 30));
 
         txtpass.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 550, 120, 30));
+        add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 430, 120, 30));
 
         lblpassword.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblpassword.setForeground(new java.awt.Color(63, 40, 101));
         lblpassword.setText("PASSWORD");
-        add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 550, 90, 30));
+        add(lblpassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 430, 90, 30));
 
         lblusername.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblusername.setForeground(new java.awt.Color(63, 40, 101));
         lblusername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblusername.setText("USERNAME");
-        add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 500, 90, 30));
+        add(lblusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 380, 90, 30));
 
         lblname.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblname.setForeground(new java.awt.Color(63, 40, 101));
         lblname.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblname.setText("NAME");
-        add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 450, 80, 30));
+        add(lblname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 80, 30));
 
         btnAdd.setBackground(new java.awt.Color(255, 255, 255));
         btnAdd.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
@@ -177,10 +177,11 @@ public class ManageHealthCamp extends javax.swing.JPanel {
                 btnAddActionPerformed(evt);
             }
         });
-        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 610, 190, 30));
+        add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 530, 190, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/png-transparent-dog-veterinarian-cartoon-pet-dog-and-pet-doctor-cartoon-character-carnivoran-photography.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 650));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pehealth.jpeg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 700));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed

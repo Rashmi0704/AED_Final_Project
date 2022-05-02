@@ -73,7 +73,8 @@ public class ManagePetInfo extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         tblVets = new javax.swing.JTable();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        lblManageInfo1 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(214, 209, 222));
         jPanel1.setPreferredSize(new java.awt.Dimension(1024, 575));
@@ -92,7 +93,7 @@ public class ManagePetInfo extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblpetinfo);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 480, 105));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 130, 480, 105));
 
         btnAssignPetOwnerToVet.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         btnAssignPetOwnerToVet.setForeground(new java.awt.Color(63, 40, 101));
@@ -103,7 +104,7 @@ public class ManagePetInfo extends javax.swing.JPanel {
                 btnAssignPetOwnerToVetActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAssignPetOwnerToVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 290, 150, 30));
+        jPanel1.add(btnAssignPetOwnerToVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 310, 150, 30));
 
         btnaddfundraiser.setBackground(new java.awt.Color(255, 255, 255));
         btnaddfundraiser.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
@@ -115,22 +116,22 @@ public class ManagePetInfo extends javax.swing.JPanel {
                 btnaddfundraiserActionPerformed(evt);
             }
         });
-        jPanel1.add(btnaddfundraiser, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 150, 30));
+        jPanel1.add(btnaddfundraiser, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 360, 150, 30));
 
         lblVet.setBackground(new java.awt.Color(255, 255, 255));
         lblVet.setFont(new java.awt.Font("Trebuchet MS", 1, 16)); // NOI18N
         lblVet.setForeground(new java.awt.Color(63, 40, 101));
         lblVet.setText("VET NAME");
-        jPanel1.add(lblVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 100, 30));
+        jPanel1.add(lblVet, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 260, 100, 30));
 
         txtvet.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(0, 102, 102)));
-        jPanel1.add(txtvet, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 230, 120, 30));
+        jPanel1.add(txtvet, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 260, 120, 30));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ASSIGN PET TO VET");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 360, 60));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 70, 360, 60));
 
         btnBack.setBackground(new java.awt.Color(255, 255, 255));
         btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8-back-arrow-64 (2) (1).png"))); // NOI18N
@@ -139,7 +140,7 @@ public class ManagePetInfo extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 40, 40));
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 40, 40));
 
         tblVets.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -154,8 +155,31 @@ public class ManagePetInfo extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblVets);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, 500, 100));
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 890, 510));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 500, 100));
+
+        jPanel2.setBackground(new java.awt.Color(63, 40, 101));
+
+        lblManageInfo1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        lblManageInfo1.setForeground(new java.awt.Color(255, 255, 255));
+        lblManageInfo1.setText("HOSPITAL ADMIN WORK AREA");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(388, Short.MAX_VALUE)
+                .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(216, 216, 216))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -223,10 +247,11 @@ public class ManagePetInfo extends javax.swing.JPanel {
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnaddfundraiser;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel lblManageInfo1;
     private javax.swing.JLabel lblVet;
     private javax.swing.JTable tblVets;
     private javax.swing.JTable tblpetinfo;

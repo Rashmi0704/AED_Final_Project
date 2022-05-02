@@ -60,6 +60,8 @@ public class ManageLabAssistant extends javax.swing.JPanel {
         lblpassword = new javax.swing.JLabel();
         txtusername = new javax.swing.JTextField();
         btnadd = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        lblManageInfo1 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(214, 209, 222));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -71,13 +73,13 @@ public class ManageLabAssistant extends javax.swing.JPanel {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 40, 40));
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 40, 40));
 
         jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(63, 40, 101));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("MANAGE LAB ASSITANT ");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 350, 50));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 350, 50));
 
         tblLabAssistant.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -172,6 +174,30 @@ public class ManageLabAssistant extends javax.swing.JPanel {
             }
         });
         jPanel1.add(btnadd, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 200, 40));
+
+        jPanel2.setBackground(new java.awt.Color(63, 40, 101));
+
+        lblManageInfo1.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        lblManageInfo1.setForeground(new java.awt.Color(255, 255, 255));
+        lblManageInfo1.setText("HOSPITAL ADMIN WORK AREA");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(391, Short.MAX_VALUE)
+                .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 396, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(213, 213, 213))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addComponent(lblManageInfo1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -300,7 +326,9 @@ private void populateLabAssistantTable() {
     private javax.swing.JButton btnadd;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblManageInfo1;
     private javax.swing.JLabel lblname;
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lblusername;

@@ -63,6 +63,7 @@ public class ManageHospitalNetwork extends javax.swing.JPanel {
         btnAddHospital = new javax.swing.JButton();
         btnUpdateHospital1 = new javax.swing.JButton();
         lblUserName2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(214, 209, 222));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -184,6 +185,11 @@ public class ManageHospitalNetwork extends javax.swing.JPanel {
         lblUserName2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblUserName2.setText("USERNAME");
         add(lblUserName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 210, 24));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/hospitalnet.gif"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 710));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
@@ -290,6 +296,7 @@ public class ManageHospitalNetwork extends javax.swing.JPanel {
     private javax.swing.JButton btnDeleteHospital;
     private javax.swing.JButton btnUpdateHospital1;
     private javax.swing.JButton btnViewHospital;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblManageHospNetwork;
     private javax.swing.JLabel lblPassword;
